@@ -42,7 +42,7 @@ func main() {
 	_ = url.Values{}
 	_ = json.Valid
 	params := url.Values{}
-	params.Set("query", "YOUR_VALUE")
+	params.Set("query", "paris")
 	params.Set("page", "1")
 	target := "https://api.autom.dev/v1/google/videos"
 	if len(params) > 0 {

@@ -40,7 +40,7 @@ public class GoogleVideosExample {
     }
 
     public static void main(String[] args) throws Exception {
-        String query = "query=" + enc("YOUR_VALUE") + "&"
+        String query = "query=" + enc("paris") + "&"
             + "page=" + enc("1");
         HttpResponse<byte[]> response = call("GET", "https://api.autom.dev/v1/google/videos" + (query.isEmpty() ? "" : "?" + query), null);
         String text = new String(response.body(), StandardCharsets.UTF_8);

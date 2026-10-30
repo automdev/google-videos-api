@@ -72,7 +72,7 @@ response = requests.get(
     "https://api.autom.dev/v1/google/videos",
     headers=HEADERS,
     params={
-        "query": "YOUR_VALUE",
+        "query": "paris",
         "page": "1",
     },
     timeout=120,
@@ -111,7 +111,7 @@ type GoogleVideosApi = {
 const headers = { "x-api-key": process.env.AUTOM_API_KEY!, "Content-Type": "application/json" };
 
 const params = new URLSearchParams({
-  "query": "YOUR_VALUE",
+  "query": "paris",
   "page": "1",
 });
 

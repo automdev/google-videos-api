@@ -19,7 +19,7 @@ def call(method, url, body = nil)
 end
 
 uri = URI("https://api.autom.dev/v1/google/videos")
-uri.query = URI.encode_www_form('query' => 'YOUR_VALUE', 'page' => '1')
+uri.query = URI.encode_www_form('query' => 'paris', 'page' => '1')
 response = call("GET", uri.to_s)
 
 puts JSON.pretty_generate(JSON.parse(response))
