@@ -56,7 +56,6 @@ Search Google Videos via API and retrieve structured video results with metadata
 | `hl` | query | string | — | Language to use for the search (two-letter language code). |
 | `page` | query | number | ✅ | Page number for pagination (1 = first page). |
 | `num` | query | number | — | Maximum number of results per page (e.g. 10). |
-| `safe` | query | string | — | Adult content filter. `active` enables Google SafeSearch; `off` disables it. Omit to use Google default. |
 
 ### Python example
 
