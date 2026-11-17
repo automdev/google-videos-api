@@ -53,10 +53,14 @@ Search Google Videos via API and retrieve structured video results with metadata
 | `query` | query | string | ✅ | The search query you want to run on Google Videos. |
 | `location` | query | string | — | Human-readable location to originate the search from. Note: `location` and `uule` cannot be used together. |
 | `uule` | query | string | — | Google encoded location parameter. Note: `uule` and `location` cannot be used together. |
-| `gl` | query | string | — | Country to use for the search (two-letter country code). |
-| `hl` | query | string | — | Language to use for the search (two-letter language code). |
+| `google_domain` | query | string | — | Google domain to use for the search. Defaults to `google.com`. |
+| `gl` | query | string | — | Country to use for the Google search. Two-letter country code (e.g. `us` for the United States, `uk` for United Kingdom, or `fr` for France). |
+| `hl` | query | string | — | Language to use for the Google search. Two or three-letter language code (e.g. `en`, `es`, `fr`), optionally followed by a region code (e.g. `en-gb`, `es-419`). |
+| `cr` | query | string | — | Limit results to one or more countries. Use `country{XX}` with `\|` as delimiter (e.g. `countryFR\|countryDE`). |
+| `lr` | query | string | — | Limit results to one or more languages. Use `lang_{xx}` with `\|` as delimiter (e.g. `lang_fr\|lang_de`). |
 | `page` | query | number | ✅ | Page number for pagination (1 = first page). |
 | `num` | query | number | — | Maximum number of results per page (e.g. 10). |
+| `safe` | query | string | — | Adult content filter. `active` enables Google SafeSearch; `off` disables it. Omit to use Google default. |
 
 ### Python example
 
